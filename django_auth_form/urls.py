@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from django_auth_form.django_auth_form import views
+from django_auth_form import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
