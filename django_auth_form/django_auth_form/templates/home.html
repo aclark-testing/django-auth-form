@@ -71,7 +71,7 @@
       <a href="/password_change_form">Change password</a> <br />
       <a href="/logout">Logout</a>
     {% else %}
-    <form>
+    <form action="/" method="POST">{% csrf_token %}
         {{ form }}<input type="submit">
     </form>
     {% endif %}
